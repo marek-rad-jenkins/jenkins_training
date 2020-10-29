@@ -12,18 +12,7 @@ Aby stworzyć projekt typu pipeline, otwórz Jenkinsa http://localhost:8080/, na
 
 Następnie w widoku joba kliknij:
 
-    Configure ->
-        -> W sekcji Pipeline -> Definition-> Pipeline Script
-            -> Wpisz w polu Script:
-                node('master'){
-                    stage('groovy'){
-                        print "stage groovy"
-                    }
-                    stage('pwsh'){
-                        pwsh 'Write-Host "hello from pwsh"'
-                    }
-                }
-        -> Kliknij Save
+
 
 Dla ulatwienia zawartość tego pola jest w pliku <i>002_jobs/pipeline/script1.groovy</i>
 Aby uruchomić joba, kliknij Build Now.
