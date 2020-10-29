@@ -1,5 +1,5 @@
 #
-function Select-Winner($Team1,$Team2){
+function Select-Winner($Team1,$Team2){ 11
     If($Team1 -eq "Legia"){
         return $Team1
     }
